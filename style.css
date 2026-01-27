@@ -1,0 +1,251 @@
+/* ===============================
+   RESET DASAR
+   =============================== */
+
+/* Menghapus margin & padding default browser */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Agar padding tidak merusak ukuran elemen */
+    font-family: 'Segoe UI', Tahoma, sans-serif; /* Font modern & mudah dibaca */
+}
+
+/* Warna dasar halaman */
+body {
+    background-color: #0f172a; /* Biru kehitaman */
+    color: #e5e7eb; /* Putih keabu-abuan agar nyaman di mata */
+    line-height: 1.6; /* Jarak antar baris */
+}
+
+/* ===============================
+   NAVIGASI
+   =============================== */
+
+header {
+    background-color: #020617; /* Hitam pekat */
+    position: sticky; /* Navbar tetap di atas saat scroll */
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    max-width: 1100px; /* Lebar maksimal konten */
+    margin: auto; /* Tengah */
+    padding: 15px 20px;
+    display: flex; /* Flexbox */
+    justify-content: space-between; /* Logo kiri, menu kanan */
+    align-items: center; /* Rata tengah vertikal */
+}
+
+/* Logo */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #38bdf8; /* Biru cerah */
+}
+
+.logo span {
+    color: #e5e7eb; /* Putih */
+}
+
+/* Menu navigasi */
+nav ul {
+    list-style: none; /* Hilangkan bullet */
+    display: flex;
+    gap: 25px; /* Jarak antar menu */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #e5e7eb;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #38bdf8; /* Biru saat hover */
+}
+
+/* ===============================
+   HERO SECTION
+   =============================== */
+
+.hero {
+    max-width: 1100px;
+    margin: auto;
+    padding: 80px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+/* Konten teks */
+.hero-content {
+    max-width: 550px;
+}
+
+.hero-content p:first-child {
+    color: #38bdf8;
+    font-weight: 600;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin: 15px 0;
+}
+
+/* Tombol */
+.btn-hero {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #38bdf8;
+    color: #020617;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.btn-hero:hover {
+    background-color: #0ea5e9;
+}
+
+/* Logo di hero */
+.hero-logo img {
+    width: 280px;
+}
+
+/* ===============================
+   CONTAINER UMUM
+   =============================== */
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 70px 20px;
+}
+
+/* ===============================
+   ABOUT
+   =============================== */
+
+.about h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #38bdf8;
+}
+
+.about-content p {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* ===============================
+   PROYEK
+   =============================== */
+
+.bg-light {
+    background-color: #020617;
+}
+
+.proyek h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #38bdf8;
+}
+
+/* Grid proyek */
+.proyek-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 kolom sejajar */
+    gap: 25px;
+}
+
+/* Kartu proyek */
+.proyek-card {
+    background-color: #020617;
+    border-radius: 12px;
+    overflow: hidden;
+    text-decoration: none;
+    color: #e5e7eb;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Efek hover */
+.proyek-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(56, 189, 248, 0.3);
+}
+
+/* Gambar proyek */
+.proyek-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Info proyek */
+.proyek-info {
+    padding: 15px;
+}
+
+.proyek-info h3 {
+    color: #38bdf8;
+    margin-bottom: 5px;
+}
+
+/* ===============================
+   MEDSOS
+   =============================== */
+
+.medsos h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #38bdf8;
+}
+
+/* List medsos */
+.medsos-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Item medsos */
+.medsos-item {
+    text-decoration: none;
+    color: #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.3s;
+}
+
+.medsos-item img {
+    width: 45px;
+}
+
+.medsos-item:hover {
+    transform: scale(1.1);
+    color: #38bdf8;
+}
+
+/* ===============================
+   FOOTER
+   =============================== */
+
+footer {
+    background-color: #020617;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #94a3b8;
+
+}
